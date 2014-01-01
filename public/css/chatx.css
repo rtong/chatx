@@ -1,0 +1,18 @@
+body { color:#444; font-family: Roboto, Arial, sans-serif; font-size: 14px; padding:0; margin:0; }
+div, p, b { padding;0 margin: 0 }
+
+.searchbox {border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px; border: 1px solid silver;border-top: 1px solid silver;width: 100%;display: block;padding: 10px 8px; float: left; }
+#chat { width: 30%; float: right; }
+#conversation { border: 0px solid silver; overflow:scroll-y; height:540px; overflow:auto; margin-bottom:10px; }
+#conv { margin-right: 10px; margin-top: 10px;   }
+#conversation b { line-height: 20px; }
+#datasend { visibility: hidden; }
+
+
+/*Drawing board*/
+#board { width: 69%; height: 97%; border-right: 1px solid silver; float: left; margin-top:10px; margin-bottom: 10px; }
+/*Drawing board*/
+
+
+#users {padding:0px;overflow:scroll-y; visibility: hidden; height:0px;}
+
