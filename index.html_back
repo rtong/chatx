@@ -27,23 +27,15 @@
   <div id="board">
     <svg id="svgElement" width="1090px" height="640px" viewBox="0 0 1090 640">
       <defs>
-        <g id="head">
+        <g id="agent">
           <circle cx="0" cy="0" r="50" style="stroke: black;" /><!--Head-->
-        </g>
-        <g id="body">
-          <line x1="0" y1="50" x2="0" y2="150" style="stroke: black;"/> <!--Body-->        
-        </g>
-        <g id="lhand">
-          <line x1="0" y1="50" x2="0" y2="100" style="stroke: black;" transform="rotate(135 0 50)" /> <!--Rotate to make left hand-->        
-        </g>
-        <g id="rhand">
-          <line x1="0" y1="50" x2="0" y2="100" style="stroke: black;" transform="rotate(-135 0 50)" /> <!--Rotate to make left hand-->        
-        </g>
-        <g id="lleg">
-          <line x1="0" y1="150" x2="0" y2="250" style="stroke: black;" transform="rotate(30 0 150)" /> <!--Rotate to make left leg-->         
-        </g>
-        <g id="rleg">
-          <line x1="0" y1="150" x2="0" y2="250" style="stroke: black;" transform="rotate(-30 0 150)" /> <!--Rotate to make right leg-->        
+          <line x1="0" y1="50" x2="0" y2="100" style="stroke: black;"/> <!--Body-->        
+          <line x1="0" y1="50" x2="0" y2="200" style="stroke: black;" transform="rotate(90 0 50)" /> <!--Rotate to make left hand-->        
+          <line x1="0" y1="50" x2="0" y2="200" style="stroke: black;" transform="rotate(-90 0 50)" /> <!--Rotate to make left hand-->        
+          <g id="leg1">
+            <line x1="0" y1="100" x2="0" y2="150" style="stroke: black;" transform="rotate(30 0 100)" /> <!--Rotate to make left leg-->         
+          </g>
+          <line x1="0" y1="100" x2="0" y2="150" style="stroke: black;" transform="rotate(-30 0 100)" /> <!--Rotate to make right leg-->        
         </g>
       </defs>
 
@@ -55,14 +47,8 @@
         <circle cx="0" cy="0" r="3" style="fill: gray;" />
         <!--Cordinate system-->
 
-        <use id="head0" x="300" y="50" xlink:href="#head" style="fill: white;" />
-        <use id="body0" x="300" y="50" xlink:href="#body" style="fill: white;" />
-        <use id="lhand0" x="300" y="100" xlink:href="#lhand" style="fill: white;" />
-        <use id="rhand0" x="300" y="100" xlink:href="#rhand" style="fill: white;" />
-        <use id="lleg0" x="300" y="50" xlink:href="#lleg" style="fill: white;" />
-        <use id="rleg0" x="300" y="50" xlink:href="#rleg" style="fill: white;" />
-        
-        <!--<use id="ball1" x="-300" y="100" xlink:href="#agent" style="fill: white;" />-->
+        <use id="ball0" x="300" y="100" xlink:href="#agent" style="fill: white;" />
+        <use id="ball1" x="-300" y="100" xlink:href="#agent" style="fill: white;" />
   
         <text x="180" y="80" id="word0"></text>
         <text x="-180" y="80" id="word1"></text>

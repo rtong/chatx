@@ -198,9 +198,9 @@
     }
     /* --- ANIMATION FUNCTIONS ------------------------------------------------------------------------------- */
     function doAnim() {
-      //moveBall(ball0); // Move the ball by a small amount.
+      moveBall(ball0); // Move the ball by a small amount.
       //moveBall(ball1); // Move the ball by a small amount.
-      //processWallCollision(ball0); // If this ball has collided with a wall, change the direction of the ball appropriately.
+      processWallCollision(ball0); // If this ball has collided with a wall, change the direction of the ball appropriately.
       //processWallCollision(ball1); // If this ball has collided with a wall, change the direction of the ball appropriately.
       //processBallCollision(ball0, ball1); // If this ball has collided with another, change the direction of both balls appropriately.
       //requestAnimationFrameID = window.requestAnimationFrame(doAnim); // Continue calling the doAnim() function.
